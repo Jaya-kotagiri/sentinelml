@@ -1,0 +1,4 @@
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic==2.5.3
+# We will add others (XGBoost, DVC) as we hit those phases to keep the Docker build fast for now.
