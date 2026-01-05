@@ -7,8 +7,9 @@ venv/
 .env
 
 # Data & DVC
-/data/*
-!/data/.gitignore
+data/raw/*.csv          # ignore raw CSVs
+!data/**/*.dvc          # allow DVC pointer files
+!data/**/.gitignore     # allow DVC-generated gitignores
 .dvc/cache
 .dvc/tmp
 
