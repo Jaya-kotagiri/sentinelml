@@ -1,0 +1,7 @@
+[core]
+    remote = storage
+['remote "storage"']
+    url = https://dagshub.com/Jaya-kotagiri/sentinelml.dvc
+    auth = basic
+    user = Jaya-kotagiri
+    password = cd88a2aa27f2a9cebb5bbd60f58cdcfd02deadc5
