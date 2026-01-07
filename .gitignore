@@ -20,3 +20,5 @@ data/raw/*.csv          # ignore raw CSVs
 
 # OS
 .DS_Store
+
+data/processed/
