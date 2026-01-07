@@ -1,0 +1,9 @@
+stages:
+  preprocess:
+    cmd: python scripts/preprocess.py
+    deps:
+    - data/raw/creditcard.csv
+    - scripts/preprocess.py
+    outs:
+    - data/processed/X_test.csv
+    - data/processed/X_train.csv

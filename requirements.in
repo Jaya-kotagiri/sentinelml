@@ -6,3 +6,10 @@ pydantic==2.5.3
 # Development Tools
 pip-tools
 pytest
+
+pandas
+scikit-learn
+
+dvc
+pathspec==0.12.1
+
