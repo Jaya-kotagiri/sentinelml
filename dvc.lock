@@ -40,3 +40,31 @@ stages:
       hash: md5
       md5: 4cd0542814292de95b8f558f4ddc12cd
       size: 316772
+  evaluate:
+    cmd: python scripts/evaluate.py
+    deps:
+    - path: data/processed/X_test.csv
+      hash: md5
+      md5: f5fa9cdfbdf9c9c053c66ef83294003c
+      size: 30465699
+    - path: data/processed/y_test.csv
+      hash: md5
+      md5: 139122f285f3641a4e93d0993fc00bc0
+      size: 170893
+    - path: models/model.pkl
+      hash: md5
+      md5: 4cd0542814292de95b8f558f4ddc12cd
+      size: 316772
+    - path: scripts/evaluate.py
+      hash: md5
+      md5: 014d3aef98ca2af5060a35e309a3eda1
+      size: 1273
+    outs:
+    - path: eval/confusion_matrix.png
+      hash: md5
+      md5: 9eb1add0497eedfd4ef0453d826a329f
+      size: 19569
+    - path: eval/metrics.json
+      hash: md5
+      md5: eb437ccf0487176656630b2c50b06857
+      size: 733
