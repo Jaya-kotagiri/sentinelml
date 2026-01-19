@@ -20,3 +20,23 @@ stages:
       hash: md5
       md5: 7ca0b9032f985ead96edc995793f448f
       size: 121866706
+  train:
+    cmd: python scripts/train.py
+    deps:
+    - path: data/processed/X_train.csv
+      hash: md5
+      md5: 7ca0b9032f985ead96edc995793f448f
+      size: 121866706
+    - path: data/processed/y_train.csv
+      hash: md5
+      md5: 9bd76a276f1670db9e12935b9548b15e
+      size: 683542
+    - path: scripts/train.py
+      hash: md5
+      md5: 0d8171e19d84965c120aa190488831f6
+      size: 730
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: 4cd0542814292de95b8f558f4ddc12cd
+      size: 316772
