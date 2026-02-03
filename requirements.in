@@ -13,3 +13,7 @@ scikit-learn
 dvc
 pathspec==0.12.1
 
+xgboost
+
+matplotlib
+seaborn
